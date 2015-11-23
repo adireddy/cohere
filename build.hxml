@@ -1,0 +1,37 @@
+-cmd haxelib newrepo
+#-cmd haxelib install bindx2 || true
+#-cmd haxelib install pixijs || true
+#-cmd haxelib install minject || true
+#-cmd haxelib install msignal || true
+#-cmd haxelib install actuate || true
+#-cmd haxelib install howlerjs || true
+#-cmd haxelib install compiletime || true
+
+--next
+
+-cp utils
+-x Assets
+-cmd rm Assets.n
+--next
+
+-cp src
+-cp utils
+-main arm.cohere.Main
+-lib pixijs
+-lib minject
+-lib compiletime
+-lib bindx2
+-lib msignal
+-lib actuate
+-lib howlerjs
+-lib dat.GUI
+-dce full
+
+--each
+
+-js js/cohere.dev.js
+-debug
+-D source-map-content
+
+--next
+-js js/cohere.min.js
