@@ -1,0 +1,5 @@
+-cp utils
+-lib chartjs
+-main extras.FileSizeReportReader
+-dce full
+-js reports/sizereport/size-report.js

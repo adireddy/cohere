@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.7">
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;BaseCommsController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;CommsController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;ChipData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;MemberIdData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;AllBetsClearedPrivateData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;BetClearedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;BetClearedPrivateData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;BetPlacedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;BetPlacedPrivateData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;BettingClosedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;ChipColourChosenData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;GameCreatedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;GameFinishedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;GotPlayerSavedBetsData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;GotPlayersData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;GotTableData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;MemberKickedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;MemberSeatedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;MembersLeftTableData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;PlayerBetDeletedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;PlayerBetSavedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;PlayerData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;PlayerGameWinningData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;SideBetPlacedPrivateData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;SideGameBetClearedPrivateData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;SideGameData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;SideGameFinishedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;SideGameProgressUpdatedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;StatisticsData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;StreetsOfGoldProgressUpdatedData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToChooseChipColourData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToClearAllSideGameBetsData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToClearBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToClearSideGameBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToGetPlayersData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToGetTableData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToLeaveTableData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToPlaceBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToPlaceSideGameBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;receive&#x2F;UnableToSeatMemberData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;SavedBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;ChooseChipColourData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;ClearAllBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;ClearAllSideGameBetsData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;ClearBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;ClearSideGameBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;DeletePlayerBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;GetPlayerSavedBetsData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;GetPlayersData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;GetTableData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;MemberLeavesTableData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;PlaceBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;SavePlayerBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;SeatMemberData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;SendMessageData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;send&#x2F;UndoBetData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;comms&#x2F;data&#x2F;SideGameInfoData.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betareaswitch&#x2F;BetAreaSwitchController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betareaswitch&#x2F;BetAreaSwitchView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betspots&#x2F;BetSpot.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betspots&#x2F;BetSpotsController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betspots&#x2F;BetSpotsView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betspots&#x2F;helpers&#x2F;BetSpotHighlights.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betspots&#x2F;helpers&#x2F;BetSpotsHelper.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betspots&#x2F;SideBet.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betspots&#x2F;SideBetNumberRun.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;betspots&#x2F;SideBetSOG.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;bettingoptions&#x2F;BettingOptionsController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;bettingoptions&#x2F;BettingOptionsModel.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;bettingoptions&#x2F;BettingOptionsView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;bg&#x2F;BGController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;bg&#x2F;BGView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;chipselector&#x2F;ChipSelectorController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;chipselector&#x2F;ChipSelectorView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;gametimer&#x2F;GameTimerController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;gametimer&#x2F;GameTimerView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;messagepopup&#x2F;MessagePopupController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;messagepopup&#x2F;MessagePopupView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;preloader&#x2F;PreloaderController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;preloader&#x2F;PreloaderView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;shortcutbets&#x2F;MyBet.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;shortcutbets&#x2F;ShortcutBet.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;shortcutbets&#x2F;ShortcutBetsController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;shortcutbets&#x2F;ShortcutBetsView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;statistics&#x2F;StatisticsController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;statistics&#x2F;StatisticsView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;streetsofgold&#x2F;Light.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;streetsofgold&#x2F;StreetsOfGoldController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;streetsofgold&#x2F;StreetsOfGoldView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;video&#x2F;VideoController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;video&#x2F;VideoControls.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;video&#x2F;VideoDecoder.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;video&#x2F;VideoView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;wrapper&#x2F;Colour.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;wrapper&#x2F;WrapperController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;components&#x2F;wrapper&#x2F;WrapperView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;controller&#x2F;Controller.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;chips&#x2F;BaseChip.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;chips&#x2F;BetChip.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;components&#x2F;ComponentController.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;components&#x2F;ComponentModel.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;components&#x2F;ComponentView.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;loader&#x2F;AssetLoader.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;loader&#x2F;AudioAsset.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;loader&#x2F;BucketLoader.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;loader&#x2F;MultipackParser.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;resources&#x2F;IResource.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;resources&#x2F;Layout.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;resources&#x2F;Messages.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;resources&#x2F;Settings.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;ui&#x2F;buttons&#x2F;Button.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;ui&#x2F;buttons&#x2F;TextButton.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;ui&#x2F;popup&#x2F;Popup.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;utils&#x2F;BrowserUtils.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;utils&#x2F;crc&#x2F;Buffer.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;utils&#x2F;CurrencyFormat.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;utils&#x2F;GameProperties.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;utils&#x2F;GameUtils.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;core&#x2F;utils&#x2F;StageProperties.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;LiveRouletteMobile.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;model&#x2F;Enums.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;model&#x2F;Model.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;model&#x2F;TableLimits.hx">
+	</file>
+	<file name="src&#x2F;gamesys&#x2F;liveroulette&#x2F;view&#x2F;View.hx">
+	</file>
+</checkstyle>
