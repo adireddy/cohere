@@ -1,0 +1,32 @@
+*.iml
+*.iws
+*.log
+*.cache
+servlet
+.DS_Store
+
+js
+output
+.idea/**
+css
+node_modules/**
+target
+*.n
+AssetsList.hx
+docs
+
+# Haxe
+*.hxproj
+.haxelib
+Export
+bin
+
+.temp
+__chxdoctmp
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+*.cache
+buffer.min.js
+crc.min.js
