@@ -8,12 +8,18 @@
 #-cmd haxelib install compiletime || true
 
 --next
-
 -cp utils
 -x Assets
 -cmd rm Assets.n
---next
 
+--next
+-cp src
+-lib pixijs
+-dce full
+arm.cohere.workers.BunnymarkWorker
+-js js/bunnymark-worker.js
+
+--next
 -cp src
 -cp utils
 -main arm.cohere.Main

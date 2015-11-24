@@ -2,3 +2,10 @@
 -cp utils
 -x extras.FileSizeReport
 -cmd rm extras.FileSizeReport.n
+
+--next
+-cmd cp -R js ../adireddy.github.io/cohere/
+-cmd cp -R resources ../adireddy.github.io/cohere/
+-cmd cp -R libs ../adireddy.github.io/cohere/
+-cmd cp -R reports ../adireddy.github.io/cohere/
+-cmd cp -R index.html ../adireddy.github.io/cohere/
