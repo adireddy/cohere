@@ -1,9 +1,9 @@
 package arm.cohere.components.spritesheet;
 
+import pixi.core.display.Container;
+import pixi.core.textures.Texture;
 import pixi.extras.MovieClip;
 import js.html.Event;
-import pixi.core.textures.Texture;
-import pixi.core.sprites.Sprite;
 import pixi.core.text.Text;
 import js.Browser;
 import arm.cohere.core.components.ComponentView;
@@ -14,19 +14,18 @@ class SpritesheetView extends ComponentView {
 	var _fighterTextures:Array<Texture>;
 	var _count:Int;
 	var _isAdding:Bool;
+	var _spriteContainer:Container;
 
 	override public function addAssetsToLoad() {
 		loader.addAsset(AssetsList.SPRITESHEET_FIGHTER, AssetsList.SPRITESHEET_FIGHTER_JSON);
-	}
-
-	function _getPixelRatio():Float {
-		return (Browser.window.devicePixelRatio >= 2) ? 2 : 1;
 	}
 
 	public function start() {
 		_count = 0;
 		_isAdding = false;
 		_fighterTextures = [];
+		_spriteContainer = new Container();
+		_container.addChild(_spriteContainer);
 
 		for (i in 0 ... 29) {
 			var frame:String = "" + i;
@@ -34,7 +33,7 @@ class SpritesheetView extends ComponentView {
 			_fighterTextures.push(loader.getTexture("rollSequence00" + frame + ".png"));
 		}
 
-		_counter = new Text(_count + " SPRITES", { fill: "#105CB6", font: "bold 12px Courier" });
+		_counter = new Text(_count + " SPRITES", { fill: "#0000FF", font: "bold 12px Courier" });
 		_container.addChild(_counter);
 
 		_addFighter(Browser.window.innerWidth / 2, Browser.window.innerHeight / 2);
@@ -59,7 +58,7 @@ class SpritesheetView extends ComponentView {
 		fighter.position.set(x, y);
 		fighter.play();
 
-		_container.addChild(fighter);
+		_spriteContainer.addChild(fighter);
 		_count++;
 		_counter.text = _count + " SPRITES";
 	}
@@ -73,6 +72,7 @@ class SpritesheetView extends ComponentView {
 		_count = 0;
 		_isAdding = false;
 		_fighterTextures = [];
+		_spriteContainer = null;
 
 		Browser.document.removeEventListener("touchstart", _onTouchStart, true);
 		Browser.document.removeEventListener("touchend", _onTouchEnd, true);

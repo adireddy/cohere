@@ -23,9 +23,6 @@ class PreloaderView extends ComponentView {
 	public function setup() {
 		loader.addAsset(AssetsList.PRELOADER_LOGO, AssetsList.PRELOADER_LOGO_PNG);
 		loader.start(_onLoaded);
-
-		Main.update.add(_onUpdate);
-		Main.resize.add(_onResize);
 	}
 
 	function _onLoaded() {
@@ -35,8 +32,7 @@ class PreloaderView extends ComponentView {
 
 		_createLoadingBar();
 
-		_container.position.set(stageProperties.screenWidth / 2, stageProperties.screenHeight / 2 - 100);
-
+		resize();
 		loader.reset();
 		ready.dispatch();
 	}
@@ -51,7 +47,7 @@ class PreloaderView extends ComponentView {
 		_loadingBarBG.endFill();
 
 		_loadingBar = new Graphics();
-		_loadingBar.beginFill(0x088A08);
+		_loadingBar.beginFill(0xFF0055);
 		_loadingBar.drawRect(0, 0, 200, 22);
 		_loadingBar.endFill();
 
@@ -60,23 +56,21 @@ class PreloaderView extends ComponentView {
 		_loadingBar.x = _loadingBar.y = 2;
 		_loadingBar.scale.x = 0.02;
 
-		_loadingBarContainer.position.set(_logo.x - _loadingBarBG.width / 2, _logo.y + _logo.height / 2 + 25);
+		_loadingBarContainer.position.set(_logo.x - _loadingBarBG.width / 2, _logo.y + _logo.height / 2 + 10);
 	}
 
 	public function reset() {
-		Main.update.remove(_onUpdate);
-		Main.resize.remove(_onResize);
 		_container.removeChild(_logo);
 		_container.removeChild(_loadingBarContainer);
 		_loadingBarContainer = null;
 		_logo = null;
 	}
 
-	function _onUpdate(elapsed:Float) {
+	override public function update(elapsed:Float) {
 		if (_loadingBar != null) _loadingBar.scale.x = loader.loadProgress / 100;
 	}
 
-	inline function _onResize() {
-		_container.position.set(stageProperties.screenWidth / 2, stageProperties.screenHeight / 2);
+	override public function resize() {
+		_container.position.set(stageProperties.screenWidth / 2, stageProperties.screenHeight / 2 - 25);
 	}
 }

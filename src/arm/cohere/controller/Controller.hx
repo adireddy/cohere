@@ -40,7 +40,6 @@ class Controller {
 		_loader = new AssetLoader();
 		_loader.baseUrl = "resources/";
 		_loader.pixelRatio = stageProperties.pixelRatio;
-		//_loader.resolution = stageProperties.bucketWidth + "x" + stageProperties.bucketHeight;
 	}
 
 	function _onAddAssets() {

@@ -1,6 +1,8 @@
 class AssetsList {
 
-	static var LIST:Array<String> = ["resources/sounds/loop.mp3",
+	static var LIST:Array<String> = ["resources/@1x/.DS_Store",
+			"resources/@2x/.DS_Store",
+			"resources/sounds/loop.mp3",
 			"resources/sounds/sound1.wav",
 			"resources/sounds/sound2.wav",
 			"resources/sounds/sound3.wav",

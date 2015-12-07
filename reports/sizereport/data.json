@@ -1,7 +1,7 @@
 {
-	"date": "2015-11-23 14:08:10",
-	"jsDev": 80255,
-	"jsMin": 78351,
+	"date": "2015-11-23 15:19:20",
+	"jsDev": 82852,
+	"jsMin": 80948,
 	"scale1Count": 66,
 	"scale1Size": 6710982,
 	"scale2Count": 2,
@@ -9,7 +9,7 @@
 	"audioCount": 5,
 	"audioSize": 1246375,
 	"miscSize": 0,
-	"projectScale1Size": 8035708,
-	"projectScale2Size": 1503608,
+	"projectScale1Size": 8038305,
+	"projectScale2Size": 1506205,
 	"checkstyleRules": 37
 }
