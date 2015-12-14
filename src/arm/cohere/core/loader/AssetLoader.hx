@@ -1,6 +1,5 @@
 package arm.cohere.core.loader;
 
-import howler.Howler;
 import pixi.loaders.Resource;
 import pixi.core.textures.Texture;
 import pixi.loaders.Loader;
@@ -48,11 +47,11 @@ class AssetLoader extends Loader {
 		_audioAssets.set(id, new AudioAsset(baseUrl + _audioAssetPaths.get(id), false, false, _onAudioAssetLoaded, _onAudioAssetLoadError));
 	}
 
-	function _onAudioAssetLoaded() {
+	function _onAudioAssetLoaded(snd:ISound) {
 		_checkAudioLoadCount();
 	}
 
-	function _onAudioAssetLoadError() {
+	function _onAudioAssetLoadError(snd:ISound) {
 		_checkAudioLoadCount();
 	}
 
@@ -184,7 +183,7 @@ class AssetLoader extends Loader {
 	}
 
 	function set_muteAudio(val:Bool):Bool {
-		Howler.mute(val);
+		Waud.mute(val);
 		return muteAudio = val;
 	}
 

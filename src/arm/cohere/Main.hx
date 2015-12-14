@@ -88,6 +88,7 @@ class Main extends Application {
 	}
 
 	static function main() {
+		Waud.init();
 		new Main();
 	}
 }

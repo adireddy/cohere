@@ -6,6 +6,7 @@
 #-cmd haxelib install actuate || true
 #-cmd haxelib install howlerjs || true
 #-cmd haxelib install compiletime || true
+#-cmd haxelib install waud || true
 
 --next
 -cp utils
@@ -20,6 +21,7 @@ arm.cohere.workers.BunnymarkWorker
 -js js/bunnymark-worker.js
 
 --next
+-cp ../waud/src
 -cp src
 -cp utils
 -main arm.cohere.Main
@@ -29,7 +31,7 @@ arm.cohere.workers.BunnymarkWorker
 -lib bindx2
 -lib msignal
 -lib actuate
--lib howlerjs
+-lib waud
 -lib dat.GUI
 -dce full
 

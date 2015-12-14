@@ -2,6 +2,7 @@ class AssetsList {
 
 	static var LIST:Array<String> = ["resources/@1x/.DS_Store",
 			"resources/@2x/.DS_Store",
+			"resources/sounds/bg.mp3",
 			"resources/sounds/loop.mp3",
 			"resources/sounds/sound1.wav",
 			"resources/sounds/sound2.wav",
@@ -119,6 +120,7 @@ class AssetsList {
 	public static inline var SPINE_SPINEBOY_ATLAS:String = "spine/spineboy.atlas";
 	public static inline var SPINE_GOBLINS_PNG:String = "spine/goblins.png";
 	public static inline var SPRITESHEET_FIGHTER_PNG:String = "spritesheet/fighter.png";
+	public static inline var SOUNDS_BG_MP3:String = "sounds/bg.mp3";
 	public static inline var MOVIECLIP_SPRITESHEET_JSON:String = "movieclip/SpriteSheet.json";
 	public static inline var NAPE_BALL_PNG:String = "nape/ball.png";
 	public static inline var RENDERTEXTURE_SPINOBJ_02_PNG:String = "rendertexture/spinObj_02.png";
@@ -182,6 +184,7 @@ class AssetsList {
 	public static inline var RENDERTEXTURE_SPINOBJ_07:String = "rendertexture_spinObj_07";
 	public static inline var ROPE_SNAKE:String = "rope_snake";
 	public static inline var SPRITESHEET_SPRITESHEET:String = "spritesheet_SpriteSheet";
+	public static inline var SOUNDS_BG:String = "sounds_bg";
 	public static inline var ALPHAMASK_CELLS:String = "alphamask_cells";
 	public static inline var BUNNYMARK_BUNNY2:String = "bunnymark_bunny2";
 	public static inline var BUNNYMARK_BUNNY3:String = "bunnymark_bunny3";

@@ -33,9 +33,13 @@ class BunnymarkView extends ComponentView {
 		loader.addAsset(AssetsList.BUNNYMARK_BUNNY3, AssetsList.BUNNYMARK_BUNNY3_PNG);
 		loader.addAsset(AssetsList.BUNNYMARK_BUNNY4, AssetsList.BUNNYMARK_BUNNY4_PNG);
 		loader.addAsset(AssetsList.BUNNYMARK_BUNNY5, AssetsList.BUNNYMARK_BUNNY5_PNG);
+
+		loader.addAudioAsset(AssetsList.SOUNDS_LOOP, AssetsList.SOUNDS_LOOP_MP3);
 	}
 
 	public function start() {
+		loader.getAudio(AssetsList.SOUNDS_LOOP).play(true);
+
 		_maxX = Browser.window.innerWidth;
 		_maxY = Browser.window.innerHeight;
 
