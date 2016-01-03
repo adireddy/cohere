@@ -10,11 +10,11 @@ class BgView extends ComponentView {
 	}
 
 	public function playBgSound() {
-		if (BrowserUtils.isiOS()) {
+		/*if (BrowserUtils.isiOS()) {
 			Waud.enableTouchUnlock(function() {
 				loader.playAudio(AssetsList.SOUNDS_BG, true);
 			});
 		}
-		else loader.playAudio(AssetsList.SOUNDS_BG, true);
+		else loader.playAudio(AssetsList.SOUNDS_BG, true);*/
 	}
 }
