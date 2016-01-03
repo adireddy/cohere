@@ -26,9 +26,6 @@ import pixi.core.display.Container;
 		_container.name = viewName + "Container";
 
 		componentName = viewName.substring(0, viewName.indexOf("View")).toLowerCase();
-
-		if (Main.resize != null) Main.resize.add(resize);
-		if (Main.update != null) Main.update.add(update);
 	}
 
 	public inline function show() {
@@ -45,15 +42,11 @@ import pixi.core.display.Container;
 
 	public function addAssetsToLoad() {}
 
-	public function resize() {}
-
 	public function destroy() {
 		_container.destroy(true);
 		view.stage.removeChild(_container);
 		_container = null;
 	}
-
-	public function update(t:Float) {}
 
 	public function applyIndex() {
 		if (index != null && index <= view.stage.children.length - 1) view.stage.setChildIndex(_container, index);
