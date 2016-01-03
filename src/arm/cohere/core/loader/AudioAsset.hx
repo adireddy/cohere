@@ -6,7 +6,7 @@ class AudioAsset {
 
 	var _snd:WaudSound;
 
-	public function new(path:String, ?autoPlay:Bool = false, ?loop:Bool = false, ?loadComplete:ISound -> Void, ?loadError:ISound -> Void) {
+	public function new(path:String, ?autoPlay:Bool = false, ?loop:Bool = false, ?loadComplete:IWaudSound -> Void, ?loadError:IWaudSound -> Void) {
 		trace(path);
 		var options:WaudSoundOptions = {};
 		options.autoplay = autoPlay;
@@ -16,11 +16,11 @@ class AudioAsset {
 		_snd = new WaudSound(path, options);
 	}
 
-	public function play(?loop:Bool = false, ?onend:Void -> Void) {
+	public function play(?loop:Bool = false, ?onend:IWaudSound -> Void) {
 		_snd.stop();
 		_snd.loop(loop);
 		_snd.play();
-		//if (onend != null) _snd.once("end", onend);
+		if (onend != null) _snd.onEnd(onend);
 	}
 
 	public function stop() {

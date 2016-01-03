@@ -31,6 +31,9 @@ class Main extends Application {
 		Pixi.RESOLUTION = _stageProperties.pixelRatio;
 		super.start();
 		_setupApplication();
+
+		var perf = new Perf(Perf.BOTTOM_RIGHT);
+		perf.addInfo(["UNKNOWN", "WEBGL", "CANVAS"][renderer.type] + " - " + pixelRatio);
 	}
 
 	inline function _setStageProperties() {

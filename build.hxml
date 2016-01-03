@@ -32,6 +32,7 @@ arm.cohere.workers.BunnymarkWorker
 -lib msignal
 -lib actuate
 -lib waud
+-lib perf.js
 -lib dat.GUI
 -dce full
 

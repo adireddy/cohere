@@ -47,11 +47,11 @@ class AssetLoader extends Loader {
 		_audioAssets.set(id, new AudioAsset(baseUrl + _audioAssetPaths.get(id), false, false, _onAudioAssetLoaded, _onAudioAssetLoadError));
 	}
 
-	function _onAudioAssetLoaded(snd:ISound) {
+	function _onAudioAssetLoaded(snd:IWaudSound) {
 		_checkAudioLoadCount();
 	}
 
-	function _onAudioAssetLoadError(snd:ISound) {
+	function _onAudioAssetLoadError(snd:IWaudSound) {
 		_checkAudioLoadCount();
 	}
 
@@ -139,12 +139,12 @@ class AssetLoader extends Loader {
 		return (Reflect.field(resources, id) != null);
 	}
 
-	public function playAudio(id:String, ?loop:Bool = false, ?onend:Void -> Void) {
+	public function playAudio(id:String, ?loop:Bool = false, ?onend:IWaudSound -> Void) {
 		var snd:AudioAsset = _audioAssets.get(id);
 		snd.play(loop, onend);
 	}
 
-	public function playAudioOnDemand(id:String, url:String, ?loop:Bool = false, ?onend:Void -> Void) {
+	public function playAudioOnDemand(id:String, url:String, ?loop:Bool = false, ?onend:IWaudSound -> Void) {
 		JConsole.log("ID: " + id);
 		var snd:AudioAsset;
 		if (_audioAssets.get(id) == null) {
