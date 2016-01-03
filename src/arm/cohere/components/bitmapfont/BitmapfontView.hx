@@ -15,7 +15,8 @@ class BitmapfontView extends ComponentView {
 		_bitmapFont = new BitmapText("bitmap fonts are\n now supported!", {font: "60px Desyrel"});
 		_container.addChild(_bitmapFont);
 
-		resize();
+		_resize();
+		if (Main.resize != null) Main.resize.add(_resize);
 	}
 
 	public function end() {
@@ -23,7 +24,7 @@ class BitmapfontView extends ComponentView {
 		_bitmapFont = null;
 	}
 
-	override public function resize() {
+	function _resize() {
 		_container.position.set((stageProperties.screenWidth - _container.width) / 2, (stageProperties.screenHeight - _container.height) / 2);
 	}
 }

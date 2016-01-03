@@ -42,6 +42,8 @@ class SpritesheetView extends ComponentView {
 		Browser.document.addEventListener("touchend", _onTouchEnd, true);
 		Browser.document.addEventListener("mousedown", _onTouchStart, true);
 		Browser.document.addEventListener("mouseup", _onTouchEnd, true);
+
+		if (Main.update != null) Main.update.add(_update);
 	}
 
 	function _onTouchStart(event:Event) {
@@ -63,7 +65,7 @@ class SpritesheetView extends ComponentView {
 		_counter.text = _count + " SPRITES";
 	}
 
-	override public function update(elapsedTime:Float) {
+	function _update(elapsedTime:Float) {
 		if (_isAdding) _addFighter(Std.random(Browser.window.innerWidth), Std.random(Browser.window.innerHeight));
 	}
 

@@ -31,8 +31,10 @@ class PreloaderView extends ComponentView {
 		_container.addChild(_logo);
 
 		_createLoadingBar();
+		_resize();
+		if (Main.update != null) Main.update.add(_update);
+		if (Main.resize != null) Main.resize.add(_resize);
 
-		resize();
 		loader.reset();
 		ready.dispatch();
 	}
@@ -66,11 +68,11 @@ class PreloaderView extends ComponentView {
 		_logo = null;
 	}
 
-	override public function update(elapsed:Float) {
+	function _update(elapsed:Float) {
 		if (_loadingBar != null) _loadingBar.scale.x = loader.loadProgress / 100;
 	}
 
-	override public function resize() {
+	function _resize() {
 		_container.position.set(stageProperties.screenWidth / 2, stageProperties.screenHeight / 2 - 25);
 	}
 }

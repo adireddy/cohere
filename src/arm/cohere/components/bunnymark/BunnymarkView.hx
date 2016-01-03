@@ -1,5 +1,6 @@
 package arm.cohere.components.bunnymark;
 
+import pixi.core.math.shapes.Rectangle;
 import pixi.core.text.Text;
 import js.html.Event;
 import js.Browser;
@@ -28,18 +29,10 @@ class BunnymarkView extends ComponentView {
 	var _counter:Text;
 
 	override public function addAssetsToLoad() {
-		loader.addAsset(AssetsList.BUNNYMARK_BUNNY1, AssetsList.BUNNYMARK_BUNNY1_PNG);
-		loader.addAsset(AssetsList.BUNNYMARK_BUNNY2, AssetsList.BUNNYMARK_BUNNY2_PNG);
-		loader.addAsset(AssetsList.BUNNYMARK_BUNNY3, AssetsList.BUNNYMARK_BUNNY3_PNG);
-		loader.addAsset(AssetsList.BUNNYMARK_BUNNY4, AssetsList.BUNNYMARK_BUNNY4_PNG);
-		loader.addAsset(AssetsList.BUNNYMARK_BUNNY5, AssetsList.BUNNYMARK_BUNNY5_PNG);
-
-		loader.addAudioAsset(AssetsList.SOUNDS_LOOP, AssetsList.SOUNDS_LOOP_MP3);
+		loader.addAsset(AssetsList.BUNNYMARK_BUNNYS, AssetsList.BUNNYMARK_BUNNYS_PNG);
 	}
 
 	public function start() {
-		loader.getAudio(AssetsList.SOUNDS_LOOP).play(true);
-
 		_maxX = Browser.window.innerWidth;
 		_maxY = Browser.window.innerHeight;
 
@@ -50,18 +43,21 @@ class BunnymarkView extends ComponentView {
 		_bunnyContainer.addChild(_bunnyContainer);
 		_container.addChild(_bunnyContainer);
 
-		_bunnyTextures = [
-			loader.getTexture(AssetsList.BUNNYMARK_BUNNY1),
-			loader.getTexture(AssetsList.BUNNYMARK_BUNNY2),
-			loader.getTexture(AssetsList.BUNNYMARK_BUNNY3),
-			loader.getTexture(AssetsList.BUNNYMARK_BUNNY4),
-			loader.getTexture(AssetsList.BUNNYMARK_BUNNY5)
-		];
+		_bunnyTexture = loader.getTexture(AssetsList.BUNNYMARK_BUNNYS);
+		var bunny1 = new Texture(_bunnyTexture.baseTexture, new Rectangle(2, 47, 26, 37));
+		var bunny2 = new Texture(_bunnyTexture.baseTexture, new Rectangle(2, 86, 26, 37));
+		var bunny3 = new Texture(_bunnyTexture.baseTexture, new Rectangle(2, 125, 26, 37));
+		var bunny4 = new Texture(_bunnyTexture.baseTexture, new Rectangle(2, 164, 26, 37));
+		var bunny5 = new Texture(_bunnyTexture.baseTexture, new Rectangle(2, 2, 26, 37));
+
+		_bunnyTextures = [bunny1, bunny2, bunny3, bunny4, bunny5];
 		_bunnyType = 1;
 		_currentTexture = _bunnyTextures[_bunnyType];
 
 		Browser.document.addEventListener("touchstart", _onTouchStart, true);
 		Browser.document.addEventListener("mousedown", _onTouchStart, true);
+		if (Main.update != null) Main.update.add(_update);
+		if (Main.resize != null) Main.resize.add(_resize);
 	}
 
 	function _onTouchStart(event:Event) {
@@ -85,7 +81,7 @@ class BunnymarkView extends ComponentView {
 		_counter.text = _count + " BUNNIES";
 	}
 
-	override public function update(elapsedTime:Float) {
+	function _update(elapsedTime:Float) {
 		for (i in 0 ... _bunnys.length) {
 			var bunny = _bunnys[i];
 			bunny.position.x += bunny.speedX;
@@ -113,7 +109,7 @@ class BunnymarkView extends ComponentView {
 		}
 	}
 
-	override public function resize() {
+	function _resize() {
 		_maxX = Browser.window.innerWidth;
 		_maxY = Browser.window.innerHeight;
 	}

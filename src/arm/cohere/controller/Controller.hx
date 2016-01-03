@@ -38,7 +38,7 @@ class Controller {
 
 	inline function _setupLoader() {
 		_loader = new AssetLoader();
-		_loader.baseUrl = "resources/";
+		_loader.baseUrl = "assets/";
 		_loader.pixelRatio = stageProperties.pixelRatio;
 	}
 
