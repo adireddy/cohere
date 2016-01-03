@@ -7,7 +7,6 @@ class AudioAsset {
 	var _snd:WaudSound;
 
 	public function new(path:String, ?autoPlay:Bool = false, ?loop:Bool = false, ?loadComplete:IWaudSound -> Void, ?loadError:IWaudSound -> Void) {
-		trace(path);
 		var options:WaudSoundOptions = {};
 		options.autoplay = autoPlay;
 		options.loop = loop;
