@@ -14,13 +14,6 @@
 -cmd rm Assets.n
 
 --next
--cp src
--lib pixijs
--dce full
-arm.cohere.workers.BunnymarkWorker
--js js/bunnymark-worker.js
-
---next
 -cp ../waud/src
 -cp src
 -cp utils
