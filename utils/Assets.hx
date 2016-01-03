@@ -23,7 +23,7 @@ class Assets {
 
 		_assetsFile.writeString("\tstatic var LIST:Array<String> = [");
 
-		_listFiles("resources");
+		_listFiles("assets");
 
 		_assetsFile.writeString("\"\"];\n\n");
 

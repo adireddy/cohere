@@ -1,81 +1,77 @@
 class AssetsList {
 
-	static var LIST:Array<String> = ["resources/@1x/.DS_Store",
-			"resources/@2x/.DS_Store",
-			"resources/sounds/bg.mp3",
-			"resources/sounds/loop.mp3",
-			"resources/sounds/sound1.wav",
-			"resources/sounds/sound2.wav",
-			"resources/sounds/sound3.wav",
-			"resources/sounds/sound4.wav",
-			"resources/@1x/alphamask/bkg.jpg",
-			"resources/@1x/alphamask/cells.png",
-			"resources/@1x/alphamask/flowerTop.png",
-			"resources/@1x/bunnymark/.DS_Store",
-			"resources/@1x/bunnymark/bunny1.png",
-			"resources/@1x/bunnymark/bunny2.png",
-			"resources/@1x/bunnymark/bunny3.png",
-			"resources/@1x/bunnymark/bunny4.png",
-			"resources/@1x/bunnymark/bunny5.png",
-			"resources/@1x/common/button.png",
-			"resources/@1x/filters/BGrotate.jpg",
-			"resources/@1x/filters/depth_blur_BG.jpg",
-			"resources/@1x/filters/depth_blur_dudes.jpg",
-			"resources/@1x/filters/depth_blur_moby.jpg",
-			"resources/@1x/filters/LightRotate1.png",
-			"resources/@1x/filters/LightRotate2.png",
-			"resources/@1x/filters/panda.png",
-			"resources/@1x/filters/SceneRotate.jpg",
-			"resources/@1x/fonts/desyrel.png",
-			"resources/@1x/fonts/desyrel.ttf",
-			"resources/@1x/fonts/desyrel.xml",
-			"resources/@1x/graphics/spinObj_01.png",
-			"resources/@1x/graphics/spinObj_02.png",
-			"resources/@1x/graphics/spinObj_03.png",
-			"resources/@1x/graphics/spinObj_04.png",
-			"resources/@1x/graphics/spinObj_05.png",
-			"resources/@1x/graphics/spinObj_06.png",
-			"resources/@1x/graphics/spinObj_07.png",
-			"resources/@1x/graphics/spinObj_08.png",
-			"resources/@1x/movieclip/.DS_Store",
-			"resources/@1x/movieclip/SpriteSheet.json",
-			"resources/@1x/movieclip/SpriteSheet.png",
-			"resources/@1x/nape/ball.png",
-			"resources/@1x/preloader/logo.png",
-			"resources/@1x/rendertexture/spinObj_01.png",
-			"resources/@1x/rendertexture/spinObj_02.png",
-			"resources/@1x/rendertexture/spinObj_03.png",
-			"resources/@1x/rendertexture/spinObj_04.png",
-			"resources/@1x/rendertexture/spinObj_05.png",
-			"resources/@1x/rendertexture/spinObj_06.png",
-			"resources/@1x/rendertexture/spinObj_07.png",
-			"resources/@1x/rendertexture/spinObj_08.png",
-			"resources/@1x/retina/img.jpg",
-			"resources/@1x/rope/snake.png",
-			"resources/@1x/spine/.DS_Store",
-			"resources/@1x/spine/dragon.atlas",
-			"resources/@1x/spine/dragon.json",
-			"resources/@1x/spine/dragon.png",
-			"resources/@1x/spine/dragon2.png",
-			"resources/@1x/spine/goblins.atlas",
-			"resources/@1x/spine/goblins.json",
-			"resources/@1x/spine/goblins.png",
-			"resources/@1x/spine/iP4_BGtile.jpg",
-			"resources/@1x/spine/iP4_ground.png",
-			"resources/@1x/spine/Pixie.atlas",
-			"resources/@1x/spine/Pixie.json",
-			"resources/@1x/spine/Pixie.png",
-			"resources/@1x/spine/spineboy.atlas",
-			"resources/@1x/spine/spineboy.json",
-			"resources/@1x/spine/spineboy.png",
-			"resources/@1x/spritesheet/.DS_Store",
-			"resources/@1x/spritesheet/fighter.json",
-			"resources/@1x/spritesheet/fighter.png",
-			"resources/@1x/spritesheet/SpriteSheet.json",
-			"resources/@1x/spritesheet/SpriteSheet.png",
-			"resources/@1x/tiling/p2.jpeg",
-			"resources/@2x/preloader/logo.png",
-			"resources/@2x/retina/img.jpg",
+	static var LIST:Array<String> = ["assets/@1x/.DS_Store",
+			"assets/@2x/.DS_Store",
+			"assets/sounds/bg.mp3",
+			"assets/sounds/loop.mp3",
+			"assets/sounds/sound1.wav",
+			"assets/sounds/sound2.wav",
+			"assets/sounds/sound3.wav",
+			"assets/sounds/sound4.wav",
+			"assets/@1x/alphamask/bkg.jpg",
+			"assets/@1x/alphamask/cells.png",
+			"assets/@1x/alphamask/flowerTop.png",
+			"assets/@1x/bunnymark/.DS_Store",
+			"assets/@1x/bunnymark/bunnys.png",
+			"assets/@1x/common/button.png",
+			"assets/@1x/filters/BGrotate.jpg",
+			"assets/@1x/filters/depth_blur_BG.jpg",
+			"assets/@1x/filters/depth_blur_dudes.jpg",
+			"assets/@1x/filters/depth_blur_moby.jpg",
+			"assets/@1x/filters/LightRotate1.png",
+			"assets/@1x/filters/LightRotate2.png",
+			"assets/@1x/filters/panda.png",
+			"assets/@1x/filters/SceneRotate.jpg",
+			"assets/@1x/fonts/desyrel.png",
+			"assets/@1x/fonts/desyrel.ttf",
+			"assets/@1x/fonts/desyrel.xml",
+			"assets/@1x/graphics/spinObj_01.png",
+			"assets/@1x/graphics/spinObj_02.png",
+			"assets/@1x/graphics/spinObj_03.png",
+			"assets/@1x/graphics/spinObj_04.png",
+			"assets/@1x/graphics/spinObj_05.png",
+			"assets/@1x/graphics/spinObj_06.png",
+			"assets/@1x/graphics/spinObj_07.png",
+			"assets/@1x/graphics/spinObj_08.png",
+			"assets/@1x/movieclip/.DS_Store",
+			"assets/@1x/movieclip/SpriteSheet.json",
+			"assets/@1x/movieclip/SpriteSheet.png",
+			"assets/@1x/nape/ball.png",
+			"assets/@1x/preloader/logo.png",
+			"assets/@1x/rendertexture/spinObj_01.png",
+			"assets/@1x/rendertexture/spinObj_02.png",
+			"assets/@1x/rendertexture/spinObj_03.png",
+			"assets/@1x/rendertexture/spinObj_04.png",
+			"assets/@1x/rendertexture/spinObj_05.png",
+			"assets/@1x/rendertexture/spinObj_06.png",
+			"assets/@1x/rendertexture/spinObj_07.png",
+			"assets/@1x/rendertexture/spinObj_08.png",
+			"assets/@1x/retina/img.jpg",
+			"assets/@1x/rope/snake.png",
+			"assets/@1x/spine/.DS_Store",
+			"assets/@1x/spine/dragon.atlas",
+			"assets/@1x/spine/dragon.json",
+			"assets/@1x/spine/dragon.png",
+			"assets/@1x/spine/dragon2.png",
+			"assets/@1x/spine/goblins.atlas",
+			"assets/@1x/spine/goblins.json",
+			"assets/@1x/spine/goblins.png",
+			"assets/@1x/spine/iP4_BGtile.jpg",
+			"assets/@1x/spine/iP4_ground.png",
+			"assets/@1x/spine/Pixie.atlas",
+			"assets/@1x/spine/Pixie.json",
+			"assets/@1x/spine/Pixie.png",
+			"assets/@1x/spine/spineboy.atlas",
+			"assets/@1x/spine/spineboy.json",
+			"assets/@1x/spine/spineboy.png",
+			"assets/@1x/spritesheet/.DS_Store",
+			"assets/@1x/spritesheet/fighter.json",
+			"assets/@1x/spritesheet/fighter.png",
+			"assets/@1x/spritesheet/SpriteSheet.json",
+			"assets/@1x/spritesheet/SpriteSheet.png",
+			"assets/@1x/tiling/p2.jpeg",
+			"assets/@2x/preloader/logo.png",
+			"assets/@2x/retina/img.jpg",
 			""];
 
 	public static inline var ALPHAMASK_BKG_JPG:String = "alphamask/bkg.jpg";
@@ -99,8 +95,7 @@ class AssetsList {
 	public static inline var SPINE_SPINEBOY_JSON:String = "spine/spineboy.json";
 	public static inline var SOUNDS_SOUND4_WAV:String = "sounds/sound4.wav";
 	public static inline var FONTS_DESYREL_XML:String = "fonts/desyrel.xml";
-	public static inline var BUNNYMARK_BUNNY2_PNG:String = "bunnymark/bunny2.png";
-	public static inline var BUNNYMARK_BUNNY4_PNG:String = "bunnymark/bunny4.png";
+	public static inline var BUNNYMARK_BUNNYS_PNG:String = "bunnymark/bunnys.png";
 	public static inline var FILTERS_SCENEROTATE_JPG:String = "filters/SceneRotate.jpg";
 	public static inline var SOUNDS_SOUND3_WAV:String = "sounds/sound3.wav";
 	public static inline var SPINE_PIXIE_JSON:String = "spine/Pixie.json";
@@ -116,7 +111,6 @@ class AssetsList {
 	public static inline var SPRITESHEET_SPRITESHEET_JSON:String = "spritesheet/SpriteSheet.json";
 	public static inline var RENDERTEXTURE_SPINOBJ_01_PNG:String = "rendertexture/spinObj_01.png";
 	public static inline var SPINE_GOBLINS_JSON:String = "spine/goblins.json";
-	public static inline var BUNNYMARK_BUNNY1_PNG:String = "bunnymark/bunny1.png";
 	public static inline var SPINE_SPINEBOY_ATLAS:String = "spine/spineboy.atlas";
 	public static inline var SPINE_GOBLINS_PNG:String = "spine/goblins.png";
 	public static inline var SPRITESHEET_FIGHTER_PNG:String = "spritesheet/fighter.png";
@@ -129,10 +123,8 @@ class AssetsList {
 	public static inline var RENDERTEXTURE_SPINOBJ_03_PNG:String = "rendertexture/spinObj_03.png";
 	public static inline var FILTERS_BGROTATE_JPG:String = "filters/BGrotate.jpg";
 	public static inline var FONTS_DESYREL_TTF:String = "fonts/desyrel.ttf";
-	public static inline var BUNNYMARK_BUNNY3_PNG:String = "bunnymark/bunny3.png";
 	public static inline var FILTERS_DEPTH_BLUR_DUDES_JPG:String = "filters/depth_blur_dudes.jpg";
 	public static inline var RENDERTEXTURE_SPINOBJ_05_PNG:String = "rendertexture/spinObj_05.png";
-	public static inline var BUNNYMARK_BUNNY5_PNG:String = "bunnymark/bunny5.png";
 	public static inline var GRAPHICS_SPINOBJ_02_PNG:String = "graphics/spinObj_02.png";
 	public static inline var RENDERTEXTURE_SPINOBJ_04_PNG:String = "rendertexture/spinObj_04.png";
 	public static inline var GRAPHICS_SPINOBJ_01_PNG:String = "graphics/spinObj_01.png";
@@ -157,6 +149,7 @@ class AssetsList {
 	public static inline var RENDERTEXTURE_SPINOBJ_02:String = "rendertexture_spinObj_02";
 	public static inline var RENDERTEXTURE_SPINOBJ_04:String = "rendertexture_spinObj_04";
 	public static inline var SPRITESHEET_FIGHTER:String = "spritesheet_fighter";
+	public static inline var BUNNYMARK_BUNNYS:String = "bunnymark_bunnys";
 	public static inline var TILING_P2:String = "tiling_p2";
 	public static inline var GRAPHICS_SPINOBJ_07:String = "graphics_spinObj_07";
 	public static inline var RENDERTEXTURE_SPINOBJ_03:String = "rendertexture_spinObj_03";
@@ -180,18 +173,13 @@ class AssetsList {
 	public static inline var GRAPHICS_SPINOBJ_01:String = "graphics_spinObj_01";
 	public static inline var SOUNDS_SOUND2:String = "sounds_sound2";
 	public static inline var FILTERS_PANDA:String = "filters_panda";
-	public static inline var BUNNYMARK_BUNNY1:String = "bunnymark_bunny1";
 	public static inline var RENDERTEXTURE_SPINOBJ_07:String = "rendertexture_spinObj_07";
 	public static inline var ROPE_SNAKE:String = "rope_snake";
 	public static inline var SPRITESHEET_SPRITESHEET:String = "spritesheet_SpriteSheet";
 	public static inline var SOUNDS_BG:String = "sounds_bg";
 	public static inline var ALPHAMASK_CELLS:String = "alphamask_cells";
-	public static inline var BUNNYMARK_BUNNY2:String = "bunnymark_bunny2";
-	public static inline var BUNNYMARK_BUNNY3:String = "bunnymark_bunny3";
 	public static inline var FILTERS_SCENEROTATE:String = "filters_SceneRotate";
 	public static inline var FONTS_DESYREL:String = "fonts_desyrel";
-	public static inline var BUNNYMARK_BUNNY4:String = "bunnymark_bunny4";
-	public static inline var BUNNYMARK_BUNNY5:String = "bunnymark_bunny5";
 	public static inline var GRAPHICS_SPINOBJ_03:String = "graphics_spinObj_03";
 	public static inline var GRAPHICS_SPINOBJ_02:String = "graphics_spinObj_02";
 	public static inline var PRELOADER_LOGO:String = "preloader_logo";
