@@ -23,7 +23,7 @@ class MenuView extends ComponentView {
 		_data = { demo: "", fps: 60 }
 
 		_menu = new GUI();
-		_demoList = _menu.add(_data, "demo", ["none", "Retina", "Bunnymark", "Spritesheet", "Bitmapfont", "Graphics"]);
+		_demoList = _menu.add(_data, "demo", ["none", "Retina", "Bunnymark", "Spritesheet", "Bitmapfont", "Graphics", "Rope"]);
 		_demoList.onChange(_changeDemo);
 
 		_fps = _menu.add(_data, "fps", 1, 60);

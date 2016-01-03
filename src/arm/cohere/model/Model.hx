@@ -11,9 +11,10 @@ class Model implements IBindable {
 
 	public static inline var BUNNYMARK:String = "bunnymark";
 	public static inline var RETINA:String = "retina";
-	public static inline var GRAPHICS:String = "graphics";
 	public static inline var SPRITESHEET:String = "spritesheet";
 	public static inline var BITMAPFONT:String = "bitmapfont";
+	public static inline var GRAPHICS:String = "graphics";
+	public static inline var ROPE:String = "rope";
 
 	public var addAssets:Signal0;
 	public var updateFps:Signal1<Int>;
