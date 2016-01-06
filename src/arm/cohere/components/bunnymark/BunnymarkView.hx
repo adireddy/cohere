@@ -123,5 +123,7 @@ class BunnymarkView extends ComponentView {
 
 		Browser.document.removeEventListener("touchstart", _onTouchStart, true);
 		Browser.document.removeEventListener("mousedown", _onTouchStart, true);
+		if (Main.update != null) Main.update.remove(_update);
+		if (Main.resize != null) Main.resize.remove(_resize);
 	}
 }

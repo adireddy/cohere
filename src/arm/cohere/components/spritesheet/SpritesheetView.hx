@@ -80,5 +80,7 @@ class SpritesheetView extends ComponentView {
 		Browser.document.removeEventListener("touchend", _onTouchEnd, true);
 		Browser.document.removeEventListener("mousedown", _onTouchStart, true);
 		Browser.document.removeEventListener("mouseup", _onTouchEnd, true);
+
+		if (Main.update != null) Main.update.remove(_update);
 	}
 }

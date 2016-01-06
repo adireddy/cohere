@@ -45,6 +45,7 @@ class TweenView extends ComponentView {
 
 	public function end() {
 		_container.removeChildren();
+		if (Main.resize != null) Main.resize.remove(_resize);
 	}
 
 	function _resize() {

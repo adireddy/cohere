@@ -46,5 +46,6 @@ class RopeView extends ComponentView {
 
 	public function end() {
 		_container.removeChildren();
+		if (Main.update != null) Main.update.remove(_update);
 	}
 }

@@ -93,6 +93,8 @@ class GraphicsView extends ComponentView {
 		_container.off("tap", _onStageClick);
 		_graphics = null;
 		_thing = null;
+		if (Main.update != null) Main.update.remove(_update);
+		if (Main.resize != null) Main.resize.remove(_resize);
 	}
 
 	function _resize() {
