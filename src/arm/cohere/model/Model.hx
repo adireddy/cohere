@@ -15,6 +15,7 @@ class Model implements IBindable {
 	public static inline var BITMAPFONT:String = "bitmapfont";
 	public static inline var GRAPHICS:String = "graphics";
 	public static inline var ROPE:String = "rope";
+	public static inline var TWEEN:String = "tween";
 
 	public var addAssets:Signal0;
 	public var updateFps:Signal1<Int>;
