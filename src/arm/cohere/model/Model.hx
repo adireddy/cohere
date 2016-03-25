@@ -16,6 +16,7 @@ class Model implements IBindable {
 	public static inline var GRAPHICS:String = "graphics";
 	public static inline var ROPE:String = "rope";
 	public static inline var TWEEN:String = "tween";
+	public static inline var PHYSICS:String = "physics";
 
 	public var addAssets:Signal0;
 	public var updateFps:Signal1<Int>;

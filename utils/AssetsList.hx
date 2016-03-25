@@ -36,6 +36,7 @@ class AssetsList {
 			"assets/@1x/movieclip/.DS_Store",
 			"assets/@1x/movieclip/SpriteSheet.json",
 			"assets/@1x/movieclip/SpriteSheet.png",
+			"assets/@1x/nape/.DS_Store",
 			"assets/@1x/nape/ball.png",
 			"assets/@1x/preloader/logo.png",
 			"assets/@1x/rendertexture/spinObj_01.png",

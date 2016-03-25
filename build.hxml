@@ -6,6 +6,7 @@
 #-cmd haxelib install actuate || true
 #-cmd haxelib install compiletime || true
 #-cmd haxelib install waud || true
+#-cmd haxelib install nape || true
 
 --next
 -cp utils
@@ -26,6 +27,7 @@
 -lib waud
 -lib perf.js
 -lib dat.GUI
+-lib nape
 -dce full
 
 --each
