@@ -3,7 +3,6 @@ package arm.cohere.components.graphics;
 import pixi.core.math.shapes.Rectangle;
 import js.Browser;
 import pixi.core.graphics.Graphics;
-import pixi.core.textures.Texture;
 import arm.cohere.core.components.ComponentView;
 
 class GraphicsView extends ComponentView {

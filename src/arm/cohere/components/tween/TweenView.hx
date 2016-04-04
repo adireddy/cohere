@@ -31,16 +31,10 @@ class TweenView extends ComponentView {
 		_twnObj.alpha = 0;
 		_container.addChild(_twnObj);
 
-		Actuate.update(test, 1, [0], [100]);
 		Actuate.tween(_twnObj, 2, { alpha: 1 }).repeat().reflect().delay(1);
 
 		_resize();
 		if (Main.resize != null) Main.resize.add(_resize);
-	}
-
-	function test(val:Float) {
-		x = val;
-		trace(x);
 	}
 
 	public function end() {

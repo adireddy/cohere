@@ -66,7 +66,7 @@ class PhysicsView extends ComponentView {
 
 	public function end() {
 		_container.removeChildren();
-		_timer.stop();
+		if (_timer != null) _timer.stop();
 		if (Main.update != null) Main.update.remove(_update);
 	}
 
