@@ -90,7 +90,7 @@ class Main extends Application {
 		resize.dispatch();
 	}
 
-	static function main() {
+	public static function main() {
 		Waud.init();
 		new Main();
 	}

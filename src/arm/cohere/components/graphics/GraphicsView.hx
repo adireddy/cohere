@@ -15,8 +15,7 @@ class GraphicsView extends ComponentView {
 		_count = 0;
 		_graphics = new Graphics();
 		_graphics.beginFill(0xFF3300);
-		_graphics.lineStyle(10, 0xffd900, 1);
-
+		_graphics.lineStyle(10, 0xFFD900, 1);
 		_graphics.moveTo(50, 50);
 		_graphics.lineTo(250, 50);
 		_graphics.lineTo(100, 100);
@@ -27,7 +26,6 @@ class GraphicsView extends ComponentView {
 
 		_graphics.lineStyle(10, 0xFF0000, 0.8);
 		_graphics.beginFill(0xFF700B, 1);
-
 		_graphics.moveTo(210, 300);
 		_graphics.lineTo(450, 320);
 		_graphics.lineTo(570, 350);

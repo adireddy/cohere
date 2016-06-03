@@ -7,6 +7,10 @@
 #-cmd haxelib install compiletime || true
 #-cmd haxelib install waud || true
 #-cmd haxelib install nape || true
+-cmd haxelib install checkstyle || true
+
+--next
+-cmd haxelib run checkstyle -s src
 
 --next
 -cp utils

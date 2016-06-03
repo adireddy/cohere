@@ -300,13 +300,13 @@
 	{
 	    "props": {
 		"assignOpPolicy": "around",
-		"unaryOpPolicy": "none",
+		"unaryOpPolicy": "around",
 		"ternaryOpPolicy": "around",
 		"arithmeticOpPolicy": "around",
 		"compareOpPolicy": "around",
 		"bitwiseOpPolicy": "around",
 		"boolOpPolicy": "around",
-		"intervalOpPolicy": "none",
+		"intervalOpPolicy": "around",
 		"arrowPolicy": "around",
 		"functionArgPolicy": "around"
 	    },

@@ -4,7 +4,6 @@ import js.Browser;
 import pixi.mesh.Rope;
 import pixi.core.display.Container;
 import pixi.core.math.Point;
-import pixi.plugins.app.Application;
 import pixi.core.textures.Texture;
 import arm.cohere.core.components.ComponentView;
 

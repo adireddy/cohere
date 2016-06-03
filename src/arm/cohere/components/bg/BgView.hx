@@ -1,6 +1,5 @@
 package arm.cohere.components.bg;
 
-import arm.cohere.core.utils.BrowserUtils;
 import arm.cohere.core.components.ComponentView;
 
 class BgView extends ComponentView {

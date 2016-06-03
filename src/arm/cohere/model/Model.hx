@@ -2,7 +2,6 @@ package arm.cohere.model;
 
 import msignal.Signal.Signal0;
 import msignal.Signal.Signal1;
-import bindx.Bind;
 import bindx.IBindable;
 
 using bindx.Bind;

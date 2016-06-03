@@ -1,6 +1,5 @@
 package arm.cohere.components.bg;
 
-import arm.cohere.model.Model;
 import arm.cohere.core.components.ComponentController;
 
 class BgController extends ComponentController {
@@ -11,7 +10,5 @@ class BgController extends ComponentController {
 		view.playBgSound();
 	}
 
-	function _onCurrentDemoChange(from:String, to:String) {
-
-	}
+	function _onCurrentDemoChange(from:String, to:String) {}
 }

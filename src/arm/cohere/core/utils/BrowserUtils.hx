@@ -34,9 +34,8 @@ class BrowserUtils {
 
 	public static function isMobile():Bool {
 		var ua = Browser.navigator.userAgent;
-		return (~/Android/i.match(ua) || ~/webOS/i.match(ua)
-		|| ~/iPhone/i.match(ua) || ~/iPad/i.match(ua) || ~/iPod/i.match(ua)
-		|| ~/BlackBerry/i.match(ua) || ~/Windows Phone/i.match(ua));
+		return (~/Android/i.match(ua) || ~/webOS/i.match(ua) || ~/iPhone/i.match(ua) || ~/iPad/i.match(ua) || ~/iPod/i.match(ua) || ~/BlackBerry/i.match(ua) ||
+		~/Windows Phone/i.match(ua));
 	}
 
 	public static function isChrome():Bool{

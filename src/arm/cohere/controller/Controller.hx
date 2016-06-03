@@ -44,7 +44,7 @@ class Controller {
 
 	function _onAddAssets() {
 		view.addAssetsToLoad();
-		for (view in _componentViews) view.addAssetsToLoad();
+		for (componentView in _componentViews) componentView.addAssetsToLoad();
 		_loader.start(_onPreloadingComplete);
 	}
 

@@ -22,7 +22,7 @@ class TextButton extends Button {
 	public function new(textures:Array<Texture>, ?textStyles:Array<TextStyle>, ?clickSound:AudioAsset) {
 		super(textures, clickSound);
 
-		if (textStyles!= null && textStyles.length > 0) {
+		if (textStyles != null && textStyles.length > 0) {
 			if (textStyles[0] != null) _upStyle = textStyles[0];
 			if (textStyles[1] != null) _overStyle = textStyles[1];
 			if (textStyles[2] != null) _downStyle = textStyles[2];

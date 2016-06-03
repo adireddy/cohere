@@ -13,15 +13,15 @@ class BunnymarkView extends ComponentView {
 	public var useWorker:Bool;
 
 	var _bunnyTexture:Texture;
-	var _bunnys:Array<Bunny> = [];
-	var _bunnyTextures:Array<Texture> = [];
+	var _bunnys:Array<Bunny>;
+	var _bunnyTextures:Array<Texture>;
 
-	var _gravity:Float = 0.5;
+	var _gravity:Float;
 
 	var _maxX:Float;
 	var _maxY:Float;
 
-	var _count:Int = 0;
+	var _count:Int;
 	var _bunnyContainer:ParticleContainer;
 
 	var _bunnyType:Int;
@@ -33,6 +33,11 @@ class BunnymarkView extends ComponentView {
 	}
 
 	public function start() {
+		_bunnys = [];
+		_bunnyTextures = [];
+		_gravity = 0.5;
+		_count = 0;
+
 		_maxX = Browser.window.innerWidth;
 		_maxY = Browser.window.innerHeight;
 
