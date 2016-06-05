@@ -381,7 +381,7 @@
 	},
 	{
 	    "props": {
-		"max": 2,
+		"max": 4,
 		"severity": "WARNING"
 	    },
 	    "type": "ReturnCount"
