@@ -1,6 +1,5 @@
 package arm.cohere.components.retina;
 
-import pixi.core.textures.Texture;
 import pixi.core.sprites.Sprite;
 import pixi.core.text.Text;
 import js.Browser;

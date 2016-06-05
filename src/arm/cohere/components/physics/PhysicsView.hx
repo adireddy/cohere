@@ -2,7 +2,6 @@ package arm.cohere.components.physics;
 
 import js.Browser;
 import pixi.core.sprites.Sprite;
-import pixi.core.textures.Texture;
 import nape.geom.Vec2;
 import nape.shape.Circle;
 import nape.phys.Material;
@@ -11,7 +10,6 @@ import nape.shape.Polygon;
 import haxe.Timer;
 import nape.space.Space;
 import nape.phys.Body;
-import pixi.core.display.Container;
 import arm.cohere.core.components.ComponentView;
 
 class PhysicsView extends ComponentView {

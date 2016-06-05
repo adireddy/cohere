@@ -2,9 +2,7 @@ package arm.cohere.components.rope;
 
 import js.Browser;
 import pixi.mesh.Rope;
-import pixi.core.display.Container;
 import pixi.core.math.Point;
-import pixi.core.textures.Texture;
 import arm.cohere.core.components.ComponentView;
 
 class RopeView extends ComponentView {
