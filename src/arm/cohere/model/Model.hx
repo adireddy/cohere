@@ -35,12 +35,14 @@ class Model implements IBindable {
 	public function reset() {}
 
 	function set_preloaderReady(val:Bool):Bool {
-		if (val) addAssets.dispatch();
-		return preloaderReady = val;
+		preloaderReady = val
+		if (preloaderReady) addAssets.dispatch();
+		return preloaderReady;
 	}
 
 	function set_fps(val:Int):Int {
-		updateFps.dispatch(val);
-		return fps = val;
+		fps = val;
+		updateFps.dispatch(fps);
+		return fps;
 	}
 }
