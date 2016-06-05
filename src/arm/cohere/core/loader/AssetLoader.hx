@@ -183,8 +183,9 @@ class AssetLoader extends Loader {
 	}
 
 	function set_muteAudio(val:Bool):Bool {
-		Waud.mute(val);
-		return muteAudio = val;
+		muteAudio = val;
+		Waud.mute(muteAudio);
+		return muteAudio;
 	}
 
 	function _getLoadtype(asset:String):Int {
