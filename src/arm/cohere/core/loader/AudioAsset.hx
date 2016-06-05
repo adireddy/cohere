@@ -27,7 +27,8 @@ class AudioAsset {
 	}
 
 	function set_volume(val:Float):Float {
-		_snd.setVolume(val);
-		return volume = val;
+		volume = val;
+		_snd.setVolume(volume);
+		return volume;
 	}
 }
