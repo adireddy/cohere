@@ -80,7 +80,7 @@ class Controller {
 			return Reflect.compare(comp1.index, comp2.index);
 		});
 
-		for (view in _componentViews) view.applyIndex();
+		for (componentView in _componentViews) componentView.applyIndex();
 	}
 
 	function _setupComponent(modelClass:Class<ComponentModel>, viewClass:Class<ComponentView>, controllerClass:Class<ComponentController>) {
