@@ -37,29 +37,34 @@ class TextButton extends Button {
 	}
 
 	function set_text(val:String):String {
-		_txt.text = val;
-		return text = val;
+		text = val
+		_txt.text = text;
+		return text;
 	}
 
 	function set_textStyle(val:TextStyle):TextStyle {
-		_txt.style = val;
-		return textStyle = val;
+		textStyle = val
+		_txt.style = textStyle;
+		return textStyle;
 	}
 
 	function set_textAnchor(val:Point):Point {
-		_txt.anchor = val;
-		return textAnchor = val;
+		textAnchor = val;
+		_txt.anchor = textAnchor;
+		return textAnchor;
 	}
 
 	function set_textPosition(val:Point):Point {
-		_txt.position = val;
-		return textPosition = val;
+		textPosition = val;
+		_txt.position = textPosition;
+		return textPosition;
 	}
 
 	override function set_anchor(val:Point):Point {
-		_ui.anchor = val;
+		anchor = val;
+		_ui.anchor = anchor;
 		_txt.position.set(x, y);
-		return anchor = val;
+		return anchor;
 	}
 
 	override function _onMouseDown(?evt:EventTarget) {

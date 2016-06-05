@@ -3,7 +3,6 @@ package arm.cohere.core.buttons;
 import arm.cohere.core.loader.AudioAsset;
 import pixi.core.math.Point;
 import msignal.Signal.Signal0;
-import msignal.Signal.Signal2;
 import pixi.core.sprites.Sprite;
 import pixi.core.textures.Texture;
 import pixi.core.display.Container;
@@ -75,9 +74,7 @@ class Button extends Container {
 		if (evt != null) evt.stopped = stopBubbling;
 	}
 
-	function _onTouchEnd(?evt:EventTarget) {
-		// evt.stopped = stopBubbling;		//Seems to be another bug, eating this stops 'tap' from happening
-	}
+	function _onTouchEnd(?evt:EventTarget) {}
 
 	function _onMouseDown(?evt:EventTarget) {
 		if (evt != null) evt.stopped = stopBubbling;
@@ -95,8 +92,9 @@ class Button extends Container {
 	}
 
 	function set_anchor(val:Point):Point {
-		_ui.anchor = val;
-		return anchor = val;
+		anchor = val
+		_ui.anchor = anchor;
+		return anchor;
 	}
 
 	public function disable() {
