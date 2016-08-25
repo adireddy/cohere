@@ -35,7 +35,7 @@ class Model implements IBindable {
 	public function reset() {}
 
 	function set_preloaderReady(val:Bool):Bool {
-		preloaderReady = val
+		preloaderReady = val;
 		if (preloaderReady) addAssets.dispatch();
 		return preloaderReady;
 	}
